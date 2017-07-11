@@ -15,13 +15,13 @@ html, body {
 }
 
 .bg-1 {
-    background-image: url("../img/Crags.png");
+    background-image: url("../img/Crags.jpg");
     min-height: 100%;
     opacity: 1;
 }
 
 .bg-2 {
-    background-image: url("../img/Crags.png");
+    background-image: url("../img/Crags.jpg");
     min-height: 100%;
     opacity: 1;
 }
