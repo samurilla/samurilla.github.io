@@ -1,39 +1,53 @@
 html, body {
-    width: 100%;
     height: 100%;
-}
-
-body {
-
-}
-
-header {
-    text-align: center;
-    color: white;
-    font-size: 5rem;
-
-
     width: 100%;
-    height: 75%;
-    background: url(../img/Crags.png) no-repeat center center scroll;
+    color: #E0E0E0;
+    font-family: sans-serif;
+    background-color: #242424;
+}
+
+.bg-1, .bg-2 {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
 }
 
-
-
-nav {
-    background-color: steelblue;
-
+.bg-1 {
+    background-image: url("../img/Crags.png");
+    min-height: 100%;
+    opacity: 1;
 }
 
-section {
-
+.bg-2 {
+    background-image: url("../img/Crags.png");
+    min-height: 100%;
+    opacity: 1;
 }
 
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000000;
+}
 
-footer {
+.caption span.border {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 18px;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
 
+.dark {
+    background-color: rgba(0,0,0,.25);
+    color: white;
+}
+
+.dark a {
+    color: #E0E0E0;
 }
