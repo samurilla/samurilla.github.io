@@ -36,11 +36,12 @@ html, body {
 }
 
 .caption span.border {
-    background-color: #000000;
+    background-color: #025AA5;
     color: #ffffff;
     padding: 18px;
     font-size: 30px;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
+    border-radius: 5px;
 }
 
 .dark {
