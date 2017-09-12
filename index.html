@@ -10,11 +10,12 @@
         <!-- Custom CSS -->
         <link rel="stylesheet" href="./css/style.css">
         <link rel="icon" type="image/png" href="./img/favicon.ico">
+        <script src="./javascript/jquery-3.2.1.js"></script>
     </head>
     <body id="home" class>
 
         <!-- Nav -->
-        <ul class="dark nav nav-pills fixed-top">
+        <!-- <ul class="dark nav nav-pills fixed-top">
             <li class="nav-item">
                 <a class="nav-link" href="#home">Home</a>
             </li>
@@ -25,65 +26,66 @@
                 <a class="nav-link" href="#contact">Contact</a>
             </li>
             </li>
-        </ul>
+        </ul> -->
         <!-- /Nav -->
 
 
         <!-- Header -->
         <header class="bg-1">
-            <div class="caption">
+            <div class="caption" onclick="setTimeout(function() {scrollWindow(0, 450)}, 1000);" id="slide">
                 <span class="border">Garrett Bigart</span>
             </div>
         </header>
         <!-- /Header -->
 
 
-        <!-- Main -->
-        <main id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-<<<<<<< HEAD
-                        <div class="text-center mt-5 primary" style="min-height: 100px;">
-                            <p>Hi! I'm Garrett. I'm a developer and photographer, and yes I did take that picture.</p>
-=======
-                        <div class="text-center mt-5" style="min-height: 200px;">
-                            <p>Hi! I'm Garrett, and I'm a developer.</p>
->>>>>>> ed5600c702e1eb871e7006ad229edde6b079100c
+
+
+            <!-- Main -->
+            <main class="content" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="text-center mt-5 primary" style="min-height: 100px;">
+                                <p>Hi! I'm Garrett. I'm a developer and photographer, and yes, I did take that picture.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </main>
-        <!-- /Main -->
+            </main>
+            <!-- /Main -->
 
-        <!-- Footer -->
-        <footer class="bg-2" id="contact">
-
-
-
-
-
-            
-            <br><br><br><br><br>
-
-
-
-
-
-
-            
-            <div class="container">
-                <div class="row">
-                    <div class="col text-center mt-5">
-                        <a href="https://github.com/samurilla" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">Github</a>
-                        <a href="https://www.linkedin.com/in/garrett-bigart-093b80135/" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">LinkdIn</a>
+            <!-- Footer -->
+            <footer class="bg-2 content" id="contact">
+                <br><br><br><br><br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col text-center mt-5">
+                            <a href="https://github.com/samurilla" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">Github</a>
+                            <a href="https://www.linkedin.com/in/garrett-bigart-093b80135/" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">LinkdIn</a>
+                        </div>
                     </div>
+                
                 </div>
-              
-            </div>
-        </footer>
-        <!-- /Footer -->
+            </footer>
+            <!-- /Footer -->
+
+
+
+
+        <script> 
+            $(document).ready(function(){
+                $("#slide").click(function(){
+                    $(".content").slideToggle("slow");
+                });
+            });
+
+            function scrollWindow(x, y) {
+                window.scrollBy(x, y);
+            };
+        </script>
+
+
     </body>
 </html>
 

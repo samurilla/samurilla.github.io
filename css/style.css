@@ -22,7 +22,7 @@ html, body {
 
 .bg-2 {
     background-image: url("../img/Crags.jpg");
-    min-height: 100%;
+    min-height: 40%;
     opacity: 1;
 }
 
@@ -33,6 +33,7 @@ html, body {
     width: 100%;
     text-align: center;
     color: #000000;
+    cursor: pointer;
 }
 
 .caption span.border {
@@ -51,4 +52,8 @@ html, body {
 
 .dark a {
     color: #E0E0E0;
+}
+
+.content {
+    display: none;
 }
